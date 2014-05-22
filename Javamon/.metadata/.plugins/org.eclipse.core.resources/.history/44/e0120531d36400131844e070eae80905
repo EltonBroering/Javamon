@@ -1,0 +1,110 @@
+package controle;
+
+public class Pokemon {
+	
+	int ID;
+	int vida;
+	int ataque;
+	int defesa;
+	int velocidade;
+	
+	
+	public Pokemon(int ID, int vida, int ataque, int defesa, int velocidade){
+		this.ID=ID;
+		this.vida=vida;
+		this.ataque=ataque;
+		this.defesa=defesa;
+		this.velocidade=velocidade;
+	
+	}
+	
+	public void ataque(){
+		
+		switch(this.ID){
+
+			case(1):
+				//bulbasaur
+				Ataque a = new Ataque("Corte", 20);
+				Ataque b = new Ataque("Folha Navalha",40);
+				Ataque c = new Ataque("Cabeçada",20);
+				Ataque d = new Ataque("Raio Solar",40);
+				break;
+		
+			case(2):
+				//caterpie
+				Ataque a2 = new Ataque ("Picada", 20);
+				Ataque b2 = new Ataque ("Patada", 20);
+				Ataque c2 = new Ataque ("Veneno", 40);
+				Ataque d2 = new Ataque ("Queimar", 40);
+				break;
+				
+			case (3):
+				//geodude
+				Ataque a3 = new Ataque ("Soco", 20);
+				Ataque b3 = new Ataque ("Pedrada", 20);
+				Ataque c3 = new Ataque ("Soco duplo", 40);
+				Ataque d3 = new Ataque ("Abraço", 40);
+				break;
+			
+			case(4):
+				//goldeen
+				Ataque a4 = new Ataque ("Mordida", 20);
+				Ataque b4 = new Ataque ("Borbulha", 20);
+				Ataque c4 = new Ataque ("Ataque de chifre", 40);
+				Ataque d4 = new Ataque ("Jato de água", 40);
+				break;
+			
+			case (5):
+				//hoothoot
+				Ataque a5 = new Ataque ("Ataque de vento",20);
+				Ataque b5 = new Ataque ("Bicada",20);
+				Ataque c5 = new Ataque ("Hipnose",40);
+				Ataque d5 = new Ataque ("Ataque de asa",40);
+				break;
+				
+			case(6):
+				//mankey
+				Ataque a6 = new Ataque ("Ataque rápido", 20);
+				Ataque b6 = new Ataque ("Soco", 20);
+				Ataque c6 = new Ataque ("Ataque de fúria", 40);
+				Ataque d6 = new Ataque ("Chute", 40);
+				break;
+				
+			case(7):
+				//pikachu
+				Ataque a7 = new Ataque ("Tapa", 20);
+				Ataque b7 = new Ataque ("Ataque rápido", 20);
+				Ataque c7 = new Ataque ("Raio do trovão", 40);
+				Ataque d7 = new Ataque ("Relâmpago", 40);
+				break;
+				
+			case(8):
+				//ponyta
+				Ataque a8 = new Ataque ("Mordida", 20);
+				Ataque b8 = new Ataque ("Jato de fogo", 20);
+				Ataque c8 = new Ataque ("Lança chamas", 40);
+				Ataque d8 = new Ataque ("Coice", 40);
+				break;
+				
+			case(9):
+				//sandshrew
+				Ataque a9 = new Ataque ("Jato de areia", 20);
+				Ataque b9 = new Ataque ("Arranhar", 20);
+				Ataque c9 = new Ataque ("Tempestade de areia", 40);
+				Ataque d9 = new Ataque ("Seta venenosa", 40);
+				break;
+				
+			case(10):
+				//shellder
+				Ataque a10 = new Ataque ("Tapa", 20);
+				Ataque b10 = new Ataque ("Jato de água", 20);
+				Ataque c10 = new Ataque ("Raio de gelo", 40);
+				Ataque d10 = new Ataque ("Raio da aurora", 40);
+				break;
+		}
+	}
+	
+}
+
+
+
